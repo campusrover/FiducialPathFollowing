@@ -48,15 +48,10 @@
     	</physics>
 
 		<model name ="maze_origin">
-			<pose>0 0 0  0 0 0</pose>
-			<static>true</static>
-			<link name="maze_self">
-				<visual name="visual">
-					<geometry>
-						<mesh><uri>file://maze2.dae</uri></mesh>
-					</geometry>
-				</visual>
-			</link>
+			<include>
+				<uri>model://maze_origin</uri>
+			</include>
+			<pose frame=''>0 0 0 0 0 0</pose>
 		</model>
 
 	</world>
