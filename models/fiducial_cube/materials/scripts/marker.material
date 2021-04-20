@@ -1,0 +1,14 @@
+material fiducialMarker/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/fiducial_marker_01.png
+      }
+    }
+  }
+}
