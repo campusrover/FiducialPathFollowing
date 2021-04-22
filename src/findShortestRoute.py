@@ -1,6 +1,13 @@
 from collections import defaultdict
   
-class Graph:
+class ShortestRoute:
+
+    def __init__(self):
+        # Subscribing to node that proccesses SLAM image to get list of vertices
+
+        # Publishing shortest path from start to finish
+        self.path_Pub = rospy.Publisher('/path_tree', array, queue_size=1)
+  
   
     # Find vertex with minimum distance
     def minDistance(self,dist,queue):
@@ -67,19 +74,23 @@ class Graph:
                         dist[i] = dist[u] + graph[u][i]
                         parent[i] = u
   
-        # Use dist to get path
+        # Use parent arr to get shortest path tree
 
-# Create object
-g= Graph()
+if __name__ == "__main__":
+    rospy.init_node('path_tree')
+    mask_publisher = TriangleMask()
+    g = ShortestRoute()
 
-# Sample values
-graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
-        [4, 0, 8, 0, 0, 0, 0, 11, 0],
-        [0, 8, 0, 7, 0, 4, 0, 0, 2],
-        [0, 0, 7, 0, 9, 14, 0, 0, 0],
-        [0, 0, 0, 9, 0, 10, 0, 0, 0],
-        [0, 0, 4, 14, 10, 0, 2, 0, 0],
-        [0, 0, 0, 0, 0, 2, 0, 1, 6],
-        [8, 11, 0, 0, 0, 0, 1, 0, 7],
-        [0, 0, 2, 0, 0, 0, 6, 7, 0]
-        ]
+    # Sample values
+    graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
+            [4, 0, 8, 0, 0, 0, 0, 11, 0],
+            [0, 8, 0, 7, 0, 4, 0, 0, 2],
+            [0, 0, 7, 0, 9, 14, 0, 0, 0],
+            [0, 0, 0, 9, 0, 10, 0, 0, 0],
+            [0, 0, 4, 14, 10, 0, 2, 0, 0],
+            [0, 0, 0, 0, 0, 2, 0, 1, 6],
+            [8, 11, 0, 0, 0, 0, 1, 0, 7],
+            [0, 0, 2, 0, 0, 0, 6, 7, 0]
+            ]
+
+    rospy.spin()
