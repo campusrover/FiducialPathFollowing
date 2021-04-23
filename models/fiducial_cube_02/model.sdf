@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='fiducial_cube'>
+  <model name='fiducial_cube_02'>
     <pose frame=''>1.05712 0.835513 0 0 -0 0</pose>
     <link name='cube'>
       <collision name='cube_collision'>
@@ -20,9 +20,9 @@
         </geometry>
         <material>
           <script>
-            <uri>models://fiducial_cube/materials/scripts</uri>
-            <uri>models://fiducial_cube/materials/textures</uri>
-            <name>fiducialMarker/Diffuse</name>
+            <uri>model://fiducial_cube_02/materials/scripts</uri>
+            <uri>model://fiducial_cube_02/materials/textures</uri>
+            <name>fiducialMarker</name>
           </script>
         </material>
         <meta>

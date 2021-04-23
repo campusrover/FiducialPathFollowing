@@ -1,0 +1,13 @@
+material fiducialMarker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture fiducial_marker_02.png
+      }
+    }
+  }
+}
