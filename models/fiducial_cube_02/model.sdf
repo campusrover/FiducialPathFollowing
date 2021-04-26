@@ -22,7 +22,7 @@
           <script>
             <uri>model://fiducial_cube_02/materials/scripts</uri>
             <uri>model://fiducial_cube_02/materials/textures</uri>
-            <name>fiducialMarker</name>
+            <name>fiducialMarker02</name>
           </script>
         </material>
         <meta>
