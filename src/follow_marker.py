@@ -17,18 +17,19 @@ class Marker_Follower:
         self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
         # twist object
         self.twist = Twist()
-        # define the dictionary
-        self.aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
-        # define parameters for aruco_detect
-        self.parameters = aruco.DetectorParameters_create()
+        # id variable
+        id = 0
         
-
     def image_callback(self, msg):
         # get image from camera
         image = self.bridge.imgmsg_to_cv2(msg)
         # transfer to grey image
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+        # define the dictionary
+        aruco_dict = aruco.Dictionary_get(aruco.DICT_5X5_250)
+        # define parameters for aruco_detect
+        parameters = aruco.DetectorParameters_create()
         # calibration matrices
         camera_matrix = np.array(
                          	[[image.shape[1], 0, image.shape[1]/2],
@@ -37,17 +38,18 @@ class Marker_Follower:
                          	)
         dist = np.array( [0, 0, 0, 0, 0] )
         # get ID and corners
-        corners, ids, rejected_img_points = aruco.detectMarkers(gray, self.aruco_dict, parameters=self.parameters)
+        corners, ids, rejected_img_points = aruco.detectMarkers(gray, aruco_dict, parameters=parameters)
 
-        if np.all(ids) != None:
-            for i in range(len(ids)):
-                # estimate pose of each marker
-                rvec, tvec, markerPoints = aruco.estimatePoseSingleMarkers(corners[i], 0.1, self.camera_matrix, self.dist_coeffs)
-                # clear numbers
-                (rvec - tvec).any()
-        
-        # draw contours of markers
-        aruco.drawDetectedMarkers(image, corners)
+        if ids is not None:
+            # estimate pose of each marker
+            ret = aruco.estimatePoseSingleMarkers(corners, 0.2, camera_matrix, dist)
+            rvec, tvec = ret[0][0,0,:], ret[1][0,0,:]
+            # clear numbers
+            (rvec - tvec).any()
+            # draw contours of markers
+            aruco.drawDetectedMarkers(image, corners)
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            cv2.putText(image, "Id: " + str(ids[0]), (0,64), font, 1, (0,255,0),2,cv2.LINE_AA)
         # show the image window
         cv2.imshow('image', image)
         cv2.waitKey(3)
