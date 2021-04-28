@@ -73,14 +73,16 @@ prev_error = 0.0
 sum_error = 0.0
 pid = 0.0
 
-# following left wall
-LEFT = 1
-# following right wall
-RIGHT = 2
-# turning
-TURN = 3
-# following state
-WANDER = 4
+# in the process of turning left
+TURNING_LEFT = 1
+# in the process of turning right
+TURNING_RIGHT = 2
+# going straight, preparing to make a turn
+PREPARING_TURN = 3
+# going striaght
+PROCEED = 4
+# no instruction received, follow left wall
+FOLLOW = 5
 
 # starting state
 state = 0
@@ -123,7 +125,7 @@ while not rospy.is_shutdown():
             # turn left
             t.angular.z = ANGULAR_SPEED
             t.linear.x = LINEAR_SPEED*0.6
-    elif state == WANDER:
+    elif state == FOLLOW:
         # whatever, handled by driver.py
         t.angular.z = 0
         t.linear.x = LINEAR_SPEED

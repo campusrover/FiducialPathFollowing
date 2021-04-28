@@ -3,9 +3,8 @@
 import rospy, cv2, cv_bridge
 import numpy as np
 import cv2.aruco as aruco
-from sensor_msgs.msg import Image, LaserScan
-from geometry_msgs.msg import Twist
-from math import pi
+from sensor_msgs.msg import Image
+from std_msgs.msg import Int16
 
 class Marker_Follower:
     def __init__(self):
@@ -13,12 +12,10 @@ class Marker_Follower:
         self.bridge = cv_bridge.CvBridge()
         # image subscriber
         self.image_sub = rospy.Subscriber('camera/rgb/image_raw', Image, self.image_callback)
-        # cmd_vel publisher
-        self.cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
-        # twist object
-        self.twist = Twist()
         # id variable
-        id = 0
+        self.id = 0
+        # publish the id seen by camera
+        self.pub_id = rospy.Publisher('id', Int16, queue_size = 1)
         
     def image_callback(self, msg):
         # get image from camera
@@ -41,6 +38,9 @@ class Marker_Follower:
         corners, ids, rejected_img_points = aruco.detectMarkers(gray, aruco_dict, parameters=parameters)
 
         if ids is not None:
+            # update id that is seen
+            self.id = min(ids)
+            self.pub_id.publish(self.id)
             # estimate pose of each marker
             ret = aruco.estimatePoseSingleMarkers(corners, 0.2, camera_matrix, dist)
             rvec, tvec = ret[0][0,0,:], ret[1][0,0,:]
@@ -50,6 +50,8 @@ class Marker_Follower:
             aruco.drawDetectedMarkers(image, corners)
             font = cv2.FONT_HERSHEY_SIMPLEX
             cv2.putText(image, "Id: " + str(ids[0]), (0,64), font, 1, (0,255,0),2,cv2.LINE_AA)
+        else:
+            self.pub_id.publish(0)
         # show the image window
         cv2.imshow('image', image)
         cv2.waitKey(3)
@@ -57,6 +59,6 @@ class Marker_Follower:
 ###############################################################################################
 ################################## RUN THE NODE ###############################################
 ###############################################################################################
-rospy.init_node('follow_fiducial')
+rospy.init_node('detect_fiducial')
 marker_follower = Marker_Follower()
 rospy.spin()

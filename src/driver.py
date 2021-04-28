@@ -49,14 +49,16 @@ LINEAR_SPEED = 0.3
 # Angular speed of the robot
 ANGULAR_SPEED = pi/6
 
-# following left wall
-LEFT = 1
-# following right wall
-RIGHT = 2
-# turning
-TURN = 3
-# following state
-WANDER = 4
+# in the process of turning left
+TURNING_LEFT = 1
+# in the process of turning right
+TURNING_RIGHT = 2
+# going straight, preparing to make a turn
+PREPARING_TURN = 3
+# going striaght
+PROCEED = 4
+# no instruction received, follow left wall
+FOLLOW = 5
 
 # starting state
 state = 0
@@ -75,9 +77,10 @@ print("STARTING")
 
 while not rospy.is_shutdown():
     print("STATE: ", state)
-    if state == LEFT or state == RIGHT or state == TURN:
+    if state == FOLLOW:
+        # if the robot received no instruction by fiducials
         t_pub = t_pid
-    elif (state == WANDER):
+    elif (state == FOLLOW):
         # have the robot wander around
         t_pub.linear.x = LINEAR_SPEED
         t_pub.angular.z = random.randrange(4) * rand_one() * ANGULAR_SPEED
