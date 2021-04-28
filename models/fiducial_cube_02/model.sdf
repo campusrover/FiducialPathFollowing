@@ -6,7 +6,7 @@
       <collision name='cube_collision'>
         <geometry>
           <box>
-            <size>0.1 0.1 0.1</size>
+            <size>0.14 0.14 0.14</size>
           </box>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -15,14 +15,14 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.1 0.1 0.1</size>
+            <size>0.14 0.14 0.14</size>
           </box>
         </geometry>
         <material>
           <script>
             <uri>model://fiducial_cube_02/materials/scripts</uri>
             <uri>model://fiducial_cube_02/materials/textures</uri>
-            <name>fiducialMarker</name>
+            <name>fiducialMarker02</name>
           </script>
         </material>
         <meta>
