@@ -1,8 +1,11 @@
 from collections import defaultdict
+import numpy as np
+import cv2 as cv
+from cv_bridge import CvBridge, CvBridgeError
   
 
 # Find vertex with minimum distance
-def minDistance(self,dist,queue):
+def minDistance(dist,queue):
     # Set min value and min_index as -1
     minimum = float("Inf")
     min_index = -1
@@ -21,10 +24,10 @@ def printPath(parent, j):
           
     # If j = source
     if parent[j] == -1 : 
-        print j,
+        print(j)
         return
     printPath(parent , parent[j])
-    print j,
+    print(j)
           
 # Find path
 def dijkstra(graph, src):
@@ -45,6 +48,8 @@ def dijkstra(graph, src):
     queue = []
     for i in range(row):
         queue.append(i)
+
+    # create dictionary of previous nodes    
               
     #Find shortest path for all nodes
     while queue:
@@ -54,7 +59,15 @@ def dijkstra(graph, src):
   
         # remove min element     
         queue.remove(u)
-  
+
+        # if u = the goal
+
+
+        # for each direction
+            # find neighbor based on direction
+            # relax edge weight from u to neighbor
+            # previous of neighbor =
+
         # Update dist and parent of adjacent vertices
         # of picked vertex from queue
         for i in range(col):
@@ -67,6 +80,11 @@ def dijkstra(graph, src):
                     parent[i] = u
   
     # Use parent arr to get shortest path tree
+
+image = cv.imread('maze_test.pgm')
+cv.convert_to_grayscale(image)
+pixel = image[0,0]
+
 
 
 # Sample values
@@ -81,4 +99,6 @@ graph = [[0, 4, 0, 0, 0, 0, 0, 8, 0],
         [0, 0, 2, 0, 0, 0, 6, 7, 0]
         ]
 
-rospy.spin()
+# dijkstra(graph, STARTNODE)
+
+# rospy.spin()
