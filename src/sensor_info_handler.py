@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# This processes all of the scan values
+# This processes all of the sensor info and defines movement pattern
+# publishes the defined pattern NO. to 'state'
 # @author Jacqueline Zhou @email jianingzhou@brandeis.edu
 
 import rospy
@@ -20,7 +21,7 @@ def laser_cb(msg):
     # publish msg_pid
     pub_svh.publish(msg_pid)
     # define the state by processed ranges info
-    state = state_define(region_check)
+    state = state_define()
     # publish state
     pub_state.publish(state)
 
@@ -81,7 +82,7 @@ def state_define():
 #===========================## init node and define variables ##===========================
 #------------------------------------------------------------------------------------------
 # Init node
-rospy.init_node('scan_values_handler')
+rospy.init_node('sensor_info_handler')
 
 # Subscribers
 laser_sub = rospy.Subscriber('scan', LaserScan, laser_cb)

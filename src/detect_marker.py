@@ -39,8 +39,7 @@ class Marker_Follower:
 
         if ids is not None:
             # update id that is seen
-            self.id = min(ids)
-            self.pub_id.publish(self.id)
+            self.id = ids[0]
             # estimate pose of each marker
             ret = aruco.estimatePoseSingleMarkers(corners, 0.2, camera_matrix, dist)
             rvec, tvec = ret[0][0,0,:], ret[1][0,0,:]
@@ -50,8 +49,8 @@ class Marker_Follower:
             aruco.drawDetectedMarkers(image, corners)
             font = cv2.FONT_HERSHEY_SIMPLEX
             cv2.putText(image, "Id: " + str(ids[0]), (0,64), font, 1, (0,255,0),2,cv2.LINE_AA)
-        else:
-            self.pub_id.publish(0)
+        
+        self.pub_id.publish(self.id)
         # show the image window
         cv2.imshow('image', image)
         cv2.waitKey(3)
