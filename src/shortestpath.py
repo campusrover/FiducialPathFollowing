@@ -66,13 +66,23 @@ def bubble_down(queue, index):
 def get_distance(img,u,v):
     return 0.1 + (float(img[v][0])-float(img[u][0]))**2+(float(img[v][1])-float(img[u][1]))**2+(float(img[v][2])-float(img[u][2]))**2
 
+def drawPath(img,path):
+    # Path is list of tuples containing x, y coords
+
+    x0,y0 = path[0]
+    for vertex in path[1:]:
+        x1,y1 = vertex
+        cv2.line(img,(x0,y0),(x1,y1),(255,0,0),2)
+        x0,y0=vertex
+
+
 def find_shortest_path(img,src,dst):
     prioQueue = [] #min-heap priority queue
     source_x=src[0]
     source_y=src[1]
     dest_x = dst[0]
     dest_y = dst[1]
-    imagerows,imagecols=img.shape[0],img.shape[1]
+    imagerows,imagecols = img.shape[0],img.shape[1]
     matrix = np.full((imagerows, imagecols), None) #access by matrix[row][col]
     for r in range(imagerows):
         for c in range(imagecols):
@@ -114,4 +124,6 @@ def find_shortest_path(img,src,dst):
 image = cv.imread('maze_test.pgm')
 cv.convert_to_grayscale(image)
 
-find_shortest_path(img,STARTNODE,ENDNODE)
+path = find_shortest_path(img,STARTNODE,ENDNODE)
+
+drawPath(image,path)
