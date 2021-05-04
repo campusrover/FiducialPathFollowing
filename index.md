@@ -7,7 +7,7 @@ filename: index.md
 # MazeSolver
 
 ## Description
-This ROS package utilizes Dijkstra's algorithm and fiducials to pilot a robot through a maze.
+This ROS package utilizes Dijkstra's algorithm and fiducials to pilot a robot through a maze
 
 ## Flow
 The project works like so:
