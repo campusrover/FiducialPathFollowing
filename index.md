@@ -19,4 +19,4 @@ The project works like so:
 
 ## Contributors
 * Jacqueline Zhou
-* Harris Rippp
+* Harris Ripp

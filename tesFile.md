@@ -1,7 +1,7 @@
 ---
 title: tesFile 
 layout: template
-filename: testFile.md
+filename: tesFile.md
 --- 
 
 # Testing tesFile.md
