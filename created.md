@@ -27,3 +27,6 @@ One interesting algorithm used in this project was a part of Dijkstra's. Specifi
 To follow a path out of the maze, we used fiducial markers along with the "right-hand rule" for mazes. If a fiducial is in sight, then the robot will recognize the marker with the help of opencv.aruco and use a proportional control to drive toward a marker; if there is no marker in sight, the robot will follow the wall on its right using a PID control, and according to the "right-hand rule", eventually we will go out of the maze.
 In order to not hit into a wall or anything else, laserscan was involved in detecting obstacles in the front. It is also used when implementing the PID control. The robot switches between "relying on laser" and "relying on vision" according to the visibility of a fiducial marker.
 
+## Labnotebook Contribution Entry
+* Jacqueline Zhou: https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md
+* Harris Ripp: 
