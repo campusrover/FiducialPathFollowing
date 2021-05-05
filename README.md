@@ -14,3 +14,6 @@ The project works like so:
 ## Contributors
 * Jacqueline Zhou
 * Harris Rippp
+
+## Link to video
+* first submission: https://youtu.be/9uh6TUvdxq0
