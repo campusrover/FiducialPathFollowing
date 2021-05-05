@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='fiducial_cube_02'>
-    <pose frame=''>1.05712 0.835513 0 0 -0 0</pose>
+    <pose frame=''>0 0 0 0 0 0</pose>
     <link name='cube'>
       <collision name='cube_collision'>
         <geometry>
@@ -9,10 +9,10 @@
             <size>0.14 0.14 0.14</size>
           </box>
         </geometry>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 0 0</pose>
       </collision>
       <visual name='cube_visual'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 0 0 0 0</pose>
         <geometry>
           <box>
             <size>0.14 0.14 0.14</size>
@@ -29,7 +29,7 @@
           <layer>0</layer>
         </meta>
       </visual>
-      <pose frame=''>0 0 0 0 -0 0</pose>
+      <pose frame=''>0 0 0 0 0 0</pose>
     </link>
     <static>1</static>
   </model>

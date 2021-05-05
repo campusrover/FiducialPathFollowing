@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+    
+        <arg name="robot_name" value="fiducial_cube"/>
+        <arg name="z" value="-0.139" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+
+    </include>
+</launch>
