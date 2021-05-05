@@ -22,5 +22,7 @@ The solution that was eventually decided upon was to create vertices for Dijkstr
 
 One interesting algorithm used in this project was a part of Dijkstra's. Specificall, how walls were not counted as vertices. This is a simple algorithm but very useful. It is called the Euclidean squared distance formula and the way it works is by assigning a numerical value to each pixel. This value would count as the weight for Dijkstra's. Every pixel is made of RGB values. What the algorithm does is it subtracts each value from it's neighboring pixel and then squares that. These values are then added together with 0.1 added. This makes it so if the values are the same, the weight becomes 0 and will be a candidate for Dijkstra's. If the pixel is a wall color, the final value will become prohibitively high and the algorithm will not elect to use that vertex. The reason 0.1 is added is because Dijkstra's algorithm causes an error if a weight is 0 so a little must be added. 
 
-
+## working with sensor combination
+To follow a path out of the maze, we used fiducial markers along with the "right-hand rule" for mazes. If a fiducial is in sight, then the robot will recognize the marker with the help of opencv.aruco and use a proportional control to drive toward a marker; if there is no marker in sight, the robot will follow the wall on its right using a PID control, and according to the "right-hand rule", eventually we will go out of the maze.
+In order to not hit into a wall or anything else, laserscan was involved in detecting obstacles in the front. It is also used when implementing the PID control. The robot switches between "relying on laser" and "relying on vision" according to the visibility of a fiducial marker.
 
