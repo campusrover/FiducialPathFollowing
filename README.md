@@ -11,10 +11,6 @@ The project works like so:
 * Fiducials are then created in the maze based on the result of Dijkstra's which instruct what turns to make
 * A second robot is placed in the maze and moves through the maze on it's own, based on the fiducials
 
-## Contributors
-* Jacqueline Zhou
-* Harris Rippp
-
 ## Link to video
 * first submission: https://youtu.be/9uh6TUvdxq0
 
