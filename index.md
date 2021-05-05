@@ -4,7 +4,7 @@ layout: template
 filename: index.md
 --- 
 
-# MazeSolver
+# MazeSolver- Jacqueline Zhou & Harris Ripp
 
 ## Description
 This ROS package utilizes Dijkstra's algorithm and fiducials to pilot a robot through a maze.
