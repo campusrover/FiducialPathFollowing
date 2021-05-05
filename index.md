@@ -20,3 +20,7 @@ The project works like so:
 ## Contributors
 * Jacqueline Zhou
 * Harris Ripp
+
+## Links to labenotebook entries
+* [Jacqueline](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
+* [Harris](https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md)
