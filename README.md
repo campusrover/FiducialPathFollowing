@@ -20,3 +20,7 @@ The project works like so:
 
 ## Link to project report
 * https://github.com/campusrover/FiducialPathFollowing/tree/gh-pages
+
+## Links to labenotebook entries
+* [Jacqueline](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
+* [Harris](https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md)
