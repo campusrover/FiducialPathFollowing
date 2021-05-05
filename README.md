@@ -17,3 +17,6 @@ The project works like so:
 
 ## Link to video
 * first submission: https://youtu.be/9uh6TUvdxq0
+
+## Link to project report
+* https://github.com/campusrover/FiducialPathFollowing/tree/gh-pages
