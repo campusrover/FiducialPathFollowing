@@ -2,6 +2,7 @@
 title: Results 
 layout: template
 filename: end.md
+author: Harris Ripp, Jacqueline Zhou
 --- 
 
 # Reflection on the project

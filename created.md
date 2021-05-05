@@ -2,6 +2,7 @@
 title: What was created 
 layout: template
 filename: created.md
+author: Harris Ripp, Jacqueline Zhou
 --- 
 
 # What Was Created
