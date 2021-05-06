@@ -1,6 +1,6 @@
 ---
 title: Home Page
-layout: template
+layout: default
 filename: index.md
 --- 
 
