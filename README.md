@@ -15,7 +15,7 @@ The project works like so:
 * first submission: https://youtu.be/9uh6TUvdxq0
 
 ## Link to project report
-* https://github.com/campusrover/FiducialPathFollowing/tree/gh-pages
+* https://campusrover.github.io/FiducialPathFollowing/
 
 ## Links to labenotebook entries
 * [Jacqueline](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
