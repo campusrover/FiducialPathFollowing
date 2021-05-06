@@ -1,9 +1,8 @@
 ---
-title: What was created 
-layout: template
-filename: created.md
-author: Harris Ripp, Jacqueline Zhou
---- 
+title: Results
+description: An explanation of the results of this project
+layout: default
+---
 
 # What Was Created
 
