@@ -21,6 +21,6 @@ The project works like so:
 * Jacqueline Zhou
 * Harris Ripp
 
-## Links to labenotebook entries
-* [Jacqueline](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
-* [Harris](https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md)
+## Links to labnotebook entries
+* Jacqueline: [Change Camera Pitch](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
+* Harris: [Detection of Edges](https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md)
