@@ -1,6 +1,6 @@
 ---
-title: Results
-description: An explanation of the results of this project
+title: Reflection
+description: A reflection on how the project went as a whole
 layout: default
 ---
 
