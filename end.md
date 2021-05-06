@@ -1,9 +1,8 @@
 ---
-title: Results 
-layout: template
-filename: end.md
-author: Harris Ripp, Jacqueline Zhou
---- 
+title: Results
+description: An explanation of the results of this project
+layout: default
+---
 
 # Reflection on the project
 
