@@ -29,4 +29,4 @@ In order to not hit into a wall or anything else, laserscan was involved in dete
 
 ## Labnotebook Contribution Entry
 * Jacqueline Zhou: https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md
-* Harris Ripp: 
+* Harris Ripp: https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md
