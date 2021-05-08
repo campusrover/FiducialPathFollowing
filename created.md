@@ -27,5 +27,5 @@ To follow a path out of the maze, we used fiducial markers along with the "right
 In order to not hit into a wall or anything else, laserscan was involved in detecting obstacles in the front. It is also used when implementing the PID control. The robot switches between "relying on laser" and "relying on vision" according to the visibility of a fiducial marker.
 
 ## Labnotebook Contribution Entry
-* Jacqueline Zhou: https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md
-* Harris Ripp: https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md
+* Jacqueline Zhou: [Change Camera Pitch](https://github.com/campusrover/labnotebook/blob/master/faq/camera_pitch.md)
+* Harris Ripp: [Detection of Edges](https://github.com/campusrover/labnotebook/blob/master/faq/edgeDetection.md)
