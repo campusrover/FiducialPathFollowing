@@ -66,10 +66,9 @@ def bubble_down(queue, ind):
 # u, v as (x, y)
 def get_distance(img,u,v):
     img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    value_u = img[u[0]][u[1]]
-    value_v = img[v[0]][v[1]]
-    img.setflags(write=True)
-    return 0.1 + float(value_v[0]-value_u[0])**2+float(value_v[1]-value_u[1])**2+float(value_v[2]-value_u[2])**2
+    value_u = np.array(img[u[0]][u[1]])
+    value_v = np.array(img[v[0]][v[1]])
+    return 0.1 + 3*((value_v[0]-value_u[0])**2)
 
 def drawPath(img,path):
     # Path is list of tuples containing x, y coords

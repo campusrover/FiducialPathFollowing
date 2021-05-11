@@ -19,7 +19,7 @@ launch_file = open("/my_ros_data/catkin_ws/src/FiducialPathFollowing/launch/dyna
 coordinate_list = source_file.readlines()
 # save coordinates according to index
 for co in coordinate_list:
-    x, y = (int(s) for s in co.split())
+    x, y = (float(s) for s in co.split())
     co_dict[index] = [x, y]
     index = index + 1
 
