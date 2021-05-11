@@ -24,7 +24,7 @@ The project works like so:
 * $ rosrun FiducialPathFollowing follow_marker.py
 
 ## Link to video
-* first submission: https://youtu.be/9uh6TUvdxq0
+* first submission: https://youtu.be/rgmT1Yg5hnU
 
 ## Link to project report
 * https://campusrover.github.io/FiducialPathFollowing/
