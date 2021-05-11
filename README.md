@@ -16,7 +16,7 @@ The project works like so:
 * $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 * $ teleop
 * $ rosrun map_server map_saver -f maze_world_origin
-* # stop all nodes
+* $ # stop all nodes
 * $ python shortestpath.py # this writes into coordinates, doesn't work
 * $ roslaunch FiducialPathFollowing maze
 * $ python write_launch.py # this writes into dynamic_spawn.launch
