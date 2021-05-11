@@ -8,8 +8,8 @@ from geometry_msgs.msg import Twist
 from std_msgs.msg import Int16
 
 # set absolute speed for robot
-FORWARD_SPEED = 0.1
-ABS_ROTATE = 0.3
+FORWARD_SPEED = 0.2
+ABS_ROTATE = 0.5
 
 class Marker_Follower:
     def __init__(self):
@@ -37,7 +37,7 @@ class Marker_Follower:
         self.prev_error = 0.0
         self.sum_error = 0.0
         # threshold (desired distance from wall)
-        self.EXP_DIST = 0.7
+        self.EXP_DIST = 0.5
     
     def laser_cb(self, msg):
         # cleanup laser data
@@ -98,8 +98,8 @@ class Marker_Follower:
         
         # when there's no marker in sight
         else:
-            if min(self.ranges[0:15]) < 1.2 or min(self.ranges[345:360]) < 1.2:
-                if min(self.ranges[75:105]) < min(self.ranges[255:285]):
+            if min(self.ranges[0:30]) < 1.2 or min(self.ranges[330:360]) < 1.2:
+                if min(self.ranges[0:100]) < min(self.ranges[260:360]):
                     # turn right
                     self.twist.angular.z = ABS_ROTATE * (-1)
                     self.twist.linear.x = FORWARD_SPEED
