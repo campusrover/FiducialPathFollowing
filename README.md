@@ -11,6 +11,18 @@ The project works like so:
 * Fiducials are then created in the maze based on the result of Dijkstra's which instruct what turns to make
 * A second robot is placed in the maze and moves through the maze on it's own, based on the fiducials
 
+## How to run
+* $ roslaunch FiducialPathFollowing maze_world_origin.launch
+* $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+* $ teleop
+* $ rosrun map_server map_saver -f maze_world_origin
+* # stop all nodes
+* $ python shortestpath.py # this writes into coordinates, doesn't work
+* $ roslaunch FiducialPathFollowing maze
+* $ python write_launch.py # this writes into dynamic_spawn.launch
+* $ roslaunch FiducialPathFollowing dynamic_spawn.launch
+* $ rosrun FiducialPathFollowing follow_marker.py
+
 ## Link to video
 * first submission: https://youtu.be/9uh6TUvdxq0
 
