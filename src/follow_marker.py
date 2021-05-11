@@ -95,6 +95,7 @@ class Marker_Follower:
             self.twist.linear.x = 0.1
             self.twist.angular.z = -float(err) / 500 / 4
             self.cmd_vel_pub.publish(self.twist)
+            ids = None
         
         # when there's no marker in sight
         else:

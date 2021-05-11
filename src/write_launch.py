@@ -30,7 +30,7 @@ for i in range(index):
     launch_file.write(string1.format(cube_index = i))
     launch_file.write(string2.format(x_value = co_dict[i][0]))
     launch_file.write(string3.format(y_value = co_dict[i][1]))
-    launch_file.write(space + space + "<arg name=\"z\" value=\"-0.139\" />\n")
+    launch_file.write(space + space + "<arg name=\"z\" value=\"-0.1399\" />\n")
     launch_file.write(space + space + "<arg name=\"sdf_robot_file\" value=\"$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf\" />\n")
     launch_file.write(space + "</include>\n")
 launch_file.write("</launch>\n")

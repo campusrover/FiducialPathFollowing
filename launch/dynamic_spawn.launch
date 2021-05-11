@@ -1,30 +1,366 @@
 <launch>
     <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
         <arg name="robot_name" value="fiducial_cube0"/>
-        <arg name="x" value="4" />
-        <arg name="y" value="10" />
-        <arg name="z" value="-0.139" />
+        <arg name="x" value="-3.726" />
+        <arg name="y" value="-6.114" />
+        <arg name="z" value="-0.1399" />
         <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
     </include>
     <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
         <arg name="robot_name" value="fiducial_cube1"/>
-        <arg name="x" value="2" />
-        <arg name="y" value="16" />
-        <arg name="z" value="-0.139" />
+        <arg name="x" value="-3.553" />
+        <arg name="y" value="-5.598" />
+        <arg name="z" value="-0.1399" />
         <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
     </include>
     <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
         <arg name="robot_name" value="fiducial_cube2"/>
-        <arg name="x" value="3" />
-        <arg name="y" value="1" />
-        <arg name="z" value="-0.139" />
+        <arg name="x" value="-3.37" />
+        <arg name="y" value="-5.089" />
+        <arg name="z" value="-0.1399" />
         <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
     </include>
     <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
         <arg name="robot_name" value="fiducial_cube3"/>
-        <arg name="x" value="7" />
-        <arg name="y" value="9" />
-        <arg name="z" value="-0.139" />
+        <arg name="x" value="-3.117" />
+        <arg name="y" value="-4.657" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube4"/>
+        <arg name="x" value="-2.559" />
+        <arg name="y" value="-4.869" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube5"/>
+        <arg name="x" value="-2.16" />
+        <arg name="y" value="-5.475" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube6"/>
+        <arg name="x" value="-1.764" />
+        <arg name="y" value="-5.889" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube7"/>
+        <arg name="x" value="-1.156" />
+        <arg name="y" value="-6.147" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube8"/>
+        <arg name="x" value="-0.6" />
+        <arg name="y" value="-6.133" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube9"/>
+        <arg name="x" value="-0.126" />
+        <arg name="y" value="-5.882" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube10"/>
+        <arg name="x" value="0.261" />
+        <arg name="y" value="-5.499" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube11"/>
+        <arg name="x" value="0.685" />
+        <arg name="y" value="-5.233" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube12"/>
+        <arg name="x" value="1.153" />
+        <arg name="y" value="-4.904" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube13"/>
+        <arg name="x" value="1.77" />
+        <arg name="y" value="-4.99" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube14"/>
+        <arg name="x" value="2.339" />
+        <arg name="y" value="-4.984" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube15"/>
+        <arg name="x" value="2.832" />
+        <arg name="y" value="-4.749" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube16"/>
+        <arg name="x" value="3.005" />
+        <arg name="y" value="-4.189" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube17"/>
+        <arg name="x" value="2.956" />
+        <arg name="y" value="-3.653" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube18"/>
+        <arg name="x" value="2.801" />
+        <arg name="y" value="-3.172" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube19"/>
+        <arg name="x" value="2.241" />
+        <arg name="y" value="-3.054" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube20"/>
+        <arg name="x" value="1.628" />
+        <arg name="y" value="-2.93" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube21"/>
+        <arg name="x" value="0.974" />
+        <arg name="y" value="-2.786" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube22"/>
+        <arg name="x" value="0.315" />
+        <arg name="y" value="-2.834" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube23"/>
+        <arg name="x" value="-0.284" />
+        <arg name="y" value="-2.815" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube24"/>
+        <arg name="x" value="-0.944" />
+        <arg name="y" value="-2.786" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube25"/>
+        <arg name="x" value="-1.684" />
+        <arg name="y" value="-2.628" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube26"/>
+        <arg name="x" value="-2.313" />
+        <arg name="y" value="-2.094" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube27"/>
+        <arg name="x" value="-2.308" />
+        <arg name="y" value="-1.507" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube28"/>
+        <arg name="x" value="-2.177" />
+        <arg name="y" value="-0.854" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube29"/>
+        <arg name="x" value="-2.163" />
+        <arg name="y" value="-0.173" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube30"/>
+        <arg name="x" value="-1.808" />
+        <arg name="y" value="0.255" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube31"/>
+        <arg name="x" value="-1.146" />
+        <arg name="y" value="0.256" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube32"/>
+        <arg name="x" value="-0.477" />
+        <arg name="y" value="0.23" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube33"/>
+        <arg name="x" value="0.248" />
+        <arg name="y" value="0.215" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube34"/>
+        <arg name="x" value="0.986" />
+        <arg name="y" value="0.216" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube35"/>
+        <arg name="x" value="1.723" />
+        <arg name="y" value="0.174" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube36"/>
+        <arg name="x" value="2.313" />
+        <arg name="y" value="0.213" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube37"/>
+        <arg name="x" value="2.942" />
+        <arg name="y" value="0.583" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube38"/>
+        <arg name="x" value="3.039" />
+        <arg name="y" value="1.186" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube39"/>
+        <arg name="x" value="3.0" />
+        <arg name="y" value="2.0" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube40"/>
+        <arg name="x" value="3.129" />
+        <arg name="y" value="2.696" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube41"/>
+        <arg name="x" value="3.684" />
+        <arg name="y" value="3.021" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube42"/>
+        <arg name="x" value="4.412" />
+        <arg name="y" value="2.615" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube43"/>
+        <arg name="x" value="4.739" />
+        <arg name="y" value="2.091" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube44"/>
+        <arg name="x" value="5.399" />
+        <arg name="y" value="1.831" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube45"/>
+        <arg name="x" value="6.0" />
+        <arg name="y" value="2.0" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube46"/>
+        <arg name="x" value="6.773" />
+        <arg name="y" value="2.239" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube47"/>
+        <arg name="x" value="6.599" />
+        <arg name="y" value="2.784" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube48"/>
+        <arg name="x" value="5.969" />
+        <arg name="y" value="3.421" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube49"/>
+        <arg name="x" value="6.0" />
+        <arg name="y" value="4.0" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube50"/>
+        <arg name="x" value="6.326" />
+        <arg name="y" value="4.42" />
+        <arg name="z" value="-0.1399" />
+        <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
+    </include>
+    <include file="$(find FiducialPathFollowing)/launch/spawn_sdf.launch">
+        <arg name="robot_name" value="fiducial_cube51"/>
+        <arg name="x" value="6.919" />
+        <arg name="y" value="4.458" />
+        <arg name="z" value="-0.1399" />
         <arg name="sdf_robot_file" value="$(find FiducialPathFollowing)/models/fiducial_cube_01/model.sdf" />
     </include>
 </launch>
